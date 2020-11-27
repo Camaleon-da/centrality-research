@@ -1,0 +1,38 @@
+/* ===================================
+   SKILLS
+====================================== */
+
+.skills{
+    // background-image: url("../images/slide2_bg.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skill {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.skill-box p {
+    font-size: 16px;
+}
+
+.progress {
+    height: 1rem;
+    margin-top: 0.5rem;
+}
+
+.custom-progress {
+    margin-bottom: 2rem;
+}
+
+.bg-change .progress {
+    background: #7d7d7d;
+}
+
+.numscroller {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}

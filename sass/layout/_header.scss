@@ -1,0 +1,107 @@
+/* ===================================
+        Header
+   ====================================== */
+
+/* nav top default */
+
+header a.logo img {
+    max-width: 80px;
+    vertical-align: sub;
+}
+
+.nav-button {
+    margin: 0 1.5rem;
+}
+
+.navbar-top-default {
+    position: absolute;
+    z-index: 99;
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.other-page .navbar-top-default {
+    background-color: $color-primary;
+}
+
+.header-appear .navbar-top-default {
+    height: 80px;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    background: #171717;
+    -webkit-animation-name: animationFade;
+    animation-name: animationFade;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
+}
+
+/*change nav color on sticky nav*/
+.header-appear .navbar-simple .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-top-default #megaone {
+    margin-right: -30px;
+}
+
+/*Navbar Simple*/
+
+.navbar-simple .navbar-nav .nav-link {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-box-round .navbar-nav .nav-link {
+    border-radius: 20px;
+}
+
+.header-appear .nav-box-round .navbar-nav .nav-link.active {
+    background-color: $color-primary;
+    color: #ffffff !important;
+}
+
+.header-appear .nav-box-round .navbar-nav .nav-link:hover {
+    color: $color-primary;
+}
+
+/*nav line*/
+
+.line:after {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    position: relative;
+    -webkit-transition: all 280ms ease-in-out;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.line:hover:after,
+.line.active:after {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: $color-primary;
+    -webkit-transition: width 350ms ease-in-out;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "centralityresearch",
+  "version": "1.0.0",
+  "description": "Landing page for Centrality Research",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feliperamigon/centrality-research.git"
+  },
+  "author": "Felipe Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feliperamigon/centrality-research/issues"
+  },
+  "homepage": "https://github.com/feliperamigon/centrality-research#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

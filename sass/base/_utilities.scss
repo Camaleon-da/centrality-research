@@ -1,0 +1,60 @@
+
+/* Background color */
+.bg-yellow {
+    background:$color-primary;
+}
+
+.bg-black {
+    background: #000000;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+/*Social Icon Hover Bg Hover */
+.social-icon:hover {
+    color: #202020 !important;
+    background:$color-primary !important;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+/* ===================================
+   Page Piling
+====================================== */
+
+#pp-nav li .active span, .pp-slidesNav .active span {
+    background-color:$color-primary;
+}
+
+#pp-nav span, .pp-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    box-shadow: inset 0 0 0 7px transparent;
+    background: transparent ;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: -webkit-transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#pp-nav li, .pp-slidesNav li {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 16px 8px 16px 8px;
+    position: relative;
+}

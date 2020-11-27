@@ -1,0 +1,26 @@
+/* ===================================
+    General
+====================================== */
+/* Reset all elements*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 25px;
+    width: 100%;
+    overflow-x: hidden;
+}

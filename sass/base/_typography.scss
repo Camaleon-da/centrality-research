@@ -1,0 +1,314 @@
+
+/* ===================================
+    Google font
+====================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.main-font{font-family: 'Oswald', sans-serif;}
+.alt-font{font-family: 'Roboto', sans-serif;}
+.mons-font{font-family: 'Montserrat', sans-serif;}
+
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif, sans-serif;
+}
+
+.h1,
+h1 {
+    font-size: 58px;
+}
+
+.h2,
+h2 {
+    font-size: 48px;
+}
+
+.h3,
+h3 {
+    font-size: 36px;
+}
+
+.h4,
+h4 {
+    font-size: 24px;
+}
+
+a,
+input,
+button,
+.navbar,
+.fixedmenu,
+.tp-bullet,
+.owl-dot,
+.owl-prev,
+.owl-next {
+    transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+}
+
+section,
+.section-padding {
+    position: relative;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.rev_slider_wrapper {
+    width: 100% !important;
+}
+
+.btn.focus,
+.btn:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+p:last-child {
+    margin-bottom: 0 !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa,
+.far,
+.fas {
+    display: inline;
+}
+
+a:active,
+a:hover {
+    color: $color-primary;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+blockquote {
+    border-left: 2px solid;
+    padding: 10px 15px 10px 35px;
+    margin: 25px 0;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+blockquote>cite {
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    padding: 0;
+}
+
+.padding-bottom {
+    padding-bottom: 7.5rem;
+}
+
+.padding-top {
+    padding-top: 7.5rem;
+}
+
+::selection {
+    background-color:$color-primary;
+    color: #ffffff;
+}
+
+
+/* transition none */
+.no-transition * {
+    transition-timing-function: initial;
+    -moz-transition-timing-function: initial;
+    -webkit-transition-timing-function: initial;
+    -o-transition-timing-function: initial;
+    -ms-transition-timing-function: initial;
+    transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+}
+
+/* overlay */
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* opacity */
+.opacity-full {
+    opacity: 1;
+}
+
+.opacity-1 {
+    opacity: .1;
+}
+
+.opacity-2 {
+    opacity: .2;
+}
+
+.opacity-3 {
+    opacity: .3;
+}
+
+.opacity-4 {
+    opacity: .4;
+}
+
+.opacity-5 {
+    opacity: .5;
+}
+
+.opacity-6 {
+    opacity: .6;
+}
+
+.opacity-7 {
+    opacity: .7;
+}
+
+.opacity-8 {
+    opacity: .8;
+}
+
+.opacity-9 {
+    opacity: .9;
+}
+
+/*font-weight*/
+.font-weight-100 {
+    font-weight: 100;
+}
+
+.font-weight-200 {
+    font-weight: 200;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+/* button */
+.btn {
+    -webkit-appearance: initial;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 2;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid transparent;
+    letter-spacing: .5px;
+    line-height: inherit;
+    border-radius: 0;
+    text-transform: capitalize;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease !important;
+    transition: all .5s ease !important;
+}
+
+/* Yellow button */
+.btn.btn-yellow {
+    background: transparent;
+    border-color: $color-primary;
+    color: $color-primary;
+}
+
+.btn.btn-yellow:hover {
+    background: $color-primary !important;
+    border-color: $color-primary;
+    color: #202020 !important
+}
+
+/* Transparent button */
+.btn.btn-trans {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff
+}
+
+.btn.btn-trans:hover {
+    background: $color-primary !important;
+    border-color: $color-primary;
+    color: #ffffff !important
+}
+
+/* button size */
+.btn.btn-small {
+    font-size: 12px;
+    padding: 4px 1.8em;
+}
+
+.btn.btn-medium {
+    font-size: 16px;
+    padding: 10px 48px;
+    line-height: 1.8em
+}
+
+.btn.btn-large {
+    font-size: 16px;
+    padding: 14px 30px;
+    line-height: 1.8em;
+}
+
+.btn.btn-rounded {
+    border-radius: 50px;
+}
+
+/* Text color */
+.text-yellow {
+    color: $color-primary;
+}
+
+.text-grey {
+    color: #a6a6a6;
+}
+
+.text-white {
+    color: #ffffff;
+}

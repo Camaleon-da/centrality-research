@@ -1,0 +1,396 @@
+/* ===================================
+   Media Queries
+====================================== */
+
+@media (min-width: 1800px) {
+    /* Side Nav */
+    .side-nav .navbar-nav .nav-item {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 1366px) and (min-width: 1281px) {
+    /* Slider */
+    .content-para {
+        padding-right: 120px;
+    }
+    .circle-one {
+        top: 24%;
+        left: 48%;
+    }
+    .circle-two {
+        top: 12%;
+        left: 70%;
+    }
+    .circle-three {
+        top: 30%;
+        left: 88%;
+    }
+    .circle-four {
+        top: 86%;
+        left: 76%;
+    }
+    .circle-five {
+        top: 90%;
+        left: 55%;
+    }
+
+    /* Skills */
+    .skill-box {
+        padding-top: 0!important;
+    }
+
+    /* Timeline */
+    .timeline-bg .heading-row {
+        padding-bottom: 0!important;
+    }
+    .cd-horizontal-timeline .events-content {
+        margin: 0;
+    }
+
+    /* Portfolio */
+    #team-circle-left {
+        left: -5%;
+    }
+    #team-circle-right {
+        right: -5%;
+    }
+
+    /* Testimonial */
+    .testimonial-bg .heading-row {
+        padding-bottom: 0!important;
+    }
+    .paragraph {
+        font-size: 16px;
+    }
+    .testimonial-owl .owl-dots {
+        margin-top: 0!important;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 1210px) {
+    /* Side Nav */
+    .side-nav .navbar-nav .nav-item {
+        margin: 14px 0;
+    }
+    .side-menu .side-nav .navbar-nav, .sidebar_btn {
+        padding-top: 0;
+    }
+    /* Slider */
+    .content-para {
+        padding-right: 120px;
+    }
+    .circle-one {
+        top: 24%;
+        left: 48%;
+    }
+    .circle-two {
+        top: 12%;
+        left: 70%;
+    }
+    .circle-three {
+        top: 30%;
+        left: 88%;
+    }
+    .circle-four {
+        top: 82%;
+        left: 80%;
+    }
+    .circle-five {
+        top: 90%;
+        left: 55%;
+    }
+
+    /* Skills */
+    .skill-box {
+        padding-top: 0!important;
+    }
+
+    /* Timeline */
+    .timeline-bg .heading-row {
+        padding-bottom: 0!important;
+    }
+    .sub-content {
+        padding-top: 1rem;
+    }
+    .cd-horizontal-timeline .events-content {
+        margin: .3em 0;
+    }
+
+    /* Portfolio */
+    .portfolio-content {
+        padding: 0;
+    }
+    .portfolio-bg .heading-row {
+        padding-bottom: 10px!important;
+    }
+
+    /* Testimonial */
+    .testimonial-owl .owl-dots {
+        margin-top: 0!important;
+    }
+    .testimonial-bg .heading-row {
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
+    .paragraph {
+        font-size: 14px;
+    }
+    .testimonial-img, .icon-quotes {
+        margin: .5rem 0!important;
+    }
+    .testimonial-tittle {
+        margin: 0!important;
+    }
+    .testimonial-tittle h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .h1, h1 {font-size: 60px;}
+    section {padding: 7.5rem 0;}
+    html {scroll-behavior: smooth;}
+    .skills, .timeline-bg, .portfolio-bg, .testimonial-bg, .contact-bg {height: auto;}
+
+    /* Side Nav */
+    .side-nav .navbar-nav .nav-link {
+        display: inline-table;
+        color: #ffffff;
+        padding: 40px 0 3px 0 !important;
+    }
+    .sidebar_btn {
+        padding-top: 40px;
+    }
+
+    /* Slider */
+    .content-para {
+        padding-right: 50px;
+    }
+    .circle-one {
+        top: 30%;
+        left: 44%;
+    }
+    .circle-two {
+        top: 20%;
+        left: 68%;
+    }
+    .circle-three {
+        top: 34%;
+        left: 86%;
+    }
+    .circle-four {
+        top: 71%;
+        left: 82%;
+    }
+    .circle-five {
+        top: 76%;
+        left: 54%;
+    }
+
+    /* Skills */
+    .bars-section {
+        padding-right: 20px!important;
+    }
+
+    /* Portfolio */
+    #team-circle-right {
+        right: -3%;
+    }
+    #team-circle-left{
+        left: -3%;
+    }
+
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+
+    .h1, h1 {font-size: 58px;}
+    .h3, h3 {font-size: 32px;}
+    section {padding: 7.5rem 0;}
+    html {scroll-behavior: smooth;}
+    .slider-area, .skills, .timeline-bg, .portfolio-bg, .testimonial-bg, .contact-bg {height: auto;}
+
+    /* Side Nav */
+    .side-menu .side-nav .navbar-nav li a {
+        font-size: 22px;
+    }
+    .mega-logo {
+        top: 20px;
+    }
+    .sidebar_btn .btn {
+        font-size: 12px;
+    }
+
+    /* Slider */
+    .animated-circle {
+        display: none;
+    }
+    .image-order {
+        order: 2;
+    }
+    .fixed {
+        position: absolute;
+    }
+    .content-para {
+        padding: 0 60px;
+    }
+    .slider-image {
+        margin: 0 auto -95px auto;
+    }
+
+    /* Skills */
+    .skill-box p {
+        font-size: 13px;
+    }
+
+    /* Portfolio */
+    .sub-content p {
+        font-size: 13px;
+    }
+    .circle {
+        display: none;
+    }
+
+    /* Contact */
+    .contact-btn .btn {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    body {text-align: center;overflow-y: hidden!important;}
+    html {scroll-behavior: smooth;}
+    section {padding: 6rem 0;}
+    .h1, h1 {font-size: 36px;}
+    .h2, h2 {font-size: 36px;}
+    .h3, h3 {font-size: 24px;}
+    p {font-size: 14px;line-height: 20px;}
+    .skills, .timeline-bg, .portfolio-bg, .testimonial-bg, .contact-bg {height: auto;}
+
+    /* Nav */
+    header a.logo img {
+        max-width: 60px;
+    }
+    .navbar-top-default {
+        height: 70px;
+    }
+
+    /* Side Nav */
+    .side-menu .mega-title {
+        display: none;
+    }
+    .side-nav .navbar-nav .nav-item {
+        margin: 18px 0;
+    }
+    .side-footer p {
+        font-size: 14px;
+    }
+    .side-menu .side-nav .navbar-nav li a {
+        font-size: 18px;
+    }
+    .sidemenu_btn {
+        right: 8px;
+        top: 25px;
+    }
+    .side-menu .mega-title h2 {
+        font-size: 54px;
+    }
+    .side-menu .mega-title {
+        animation: none;
+        left: 50%;
+    }
+    .sidebar_btn .btn {
+        font-size: 10px;
+    }
+
+    /* Slider */
+    .slider-area .slider-content {
+        margin-top: 30px;
+    }
+    .content-para {
+        padding: 0 10px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .image-order {
+        order: 2;
+    }
+    .animated-circle {
+        display: none;
+    }
+    .slider-copyright {
+        font-size: 12px;
+        bottom: 10px;
+    }
+    .slider-footer .social-icons-simple {
+        display: none;
+    }
+    .fixed {
+        position: absolute;
+    }
+
+    /* Skills */
+    .skill-box p {
+        font-size: 14px;
+    }
+    .progress-bar-side {
+        padding-top: 4rem;
+    }
+
+    /* Timeline */
+    .main-content h2 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    /* Portfolio */
+    .portfolio-content {
+        text-align: center;
+    }
+    .circle {
+        display: none;
+    }
+
+    /* Testimonials */
+    .paragraph {
+        font-size: 14px;
+    }
+
+    /* Contact */
+    .contact-form .form-control {
+        font-size: 14px;
+    }
+}
+@media (max-width: 575.98px) {
+    .h1, h1 {
+        font-size: 30px;
+    }
+
+    /* Side Nav */
+    .side-nav .navbar-nav .nav-item {
+        margin: 12px 0;
+    }
+    .side-menu .mega-title h2 {
+        font-size: 48px;
+    }
+    .side-footer p {
+        font-size: 10px;
+        line-height: 1rem;
+    }
+}
+@media (max-width: 320px) {
+    .side-menu .inner-wrapper {
+        padding: 2rem 3rem;
+    }
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+    .slider-image img {
+        top: -35px;
+    }
+}

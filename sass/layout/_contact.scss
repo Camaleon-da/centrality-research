@@ -3,7 +3,8 @@
 ====================================== */
 
 .contact-bg{
-    background-image: url("../images/contact-bg.jpg");
+    // background-image: url("../images/contact-bg.jpg");
+    background: $color-charcoal;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;

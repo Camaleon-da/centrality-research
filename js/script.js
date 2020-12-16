@@ -21,11 +21,10 @@ $(window).on("load", function () {
     else{
         $('#pagepiling').pagepiling({
             direction: 'vertical',
-            sectionsColor: ['#171717', '#171717', '#171717', '#171717', '#171717', '#171717', '#171717'],
+            sectionsColor: ['#333132', '#333132', '#333132', '#333132', '#333132', '#333132'],
             anchors: [
                 'home',
                 'about',
-                'timeline',
                 'portfolio',
                 'team',
                 'testimonial',
@@ -41,11 +40,10 @@ $(window).on("load", function () {
                 'tooltips': [
                     'Home',
                     'Who we are',
-                    'What we do',
                     'Offerings',
                     'Meet the team',
                     'Testimonials',
-                    'Contact'
+                    'Contact',
                 ],
             },
             //events

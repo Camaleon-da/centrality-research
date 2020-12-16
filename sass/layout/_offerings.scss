@@ -1,0 +1,165 @@
+.offerings {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 136rem;
+    
+    .text-yellow {
+        margin-bottom: 10px;
+    }
+
+    &-description {
+        font-size: 1.8rem;
+        font-family: 'Lato', sans-serif;
+    }
+
+    &-card {
+        position: relative;
+        height: 270px;
+        background: #fff;
+        display: flex;
+        width: 45%;
+        margin: 30px 0;
+        color: $color-secondary;
+        
+        &-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $color-primary;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: 0.5s ease-in-out;
+            
+            &::before {
+                font-family: 'Barlow Condensed', sans-serif;
+                content: attr(data-text);
+                position: absolute;
+                bottom: 15px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 2.5rem;
+                color: $color-charcoal;
+                text-transform: uppercase;
+                font-weight: 700;
+                transition: 1s ease-in-out;
+            }
+
+            img {
+                max-width: 100px;
+                transition:  0.5s ease-in-out;
+            }
+
+        }
+
+        &-content {
+            position: absolute;
+            right: 0;
+            width: calc(100% - 75px);
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4rem;
+            font-family: 'Lato', sans-serif;
+
+            h3 {
+                margin-bottom: 5px;
+                font-size: 1.8rem;
+            }
+
+            a {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 5px 10px;
+                background: #333;
+                text-decoration: none;
+                color: $color-white;
+            }
+            
+            ul {
+                list-style: none;
+            }
+
+            ul li:before {
+                content: '✓';
+                color: $color-secondary
+            }
+        }
+    }
+
+}
+
+.offerings .offerings-card:hover .offerings-card-img {
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: $color-primary;
+
+    &::before {
+        content: none;
+        transition: 1s ease-in-out;
+    }
+
+    img {
+        max-width: 75px;
+    }
+}
+
+// Media querys
+
+@media (max-width: 992px) {
+    .offerings {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        &-card {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .offerings {
+
+        &-card {
+            width: 300px;
+            flex-direction: column;
+            height: auto;
+
+            &-img {
+                position: relative;
+            }
+
+            &-content {
+                position: relative;
+                width: 100%;
+            }
+        }
+    }
+
+    .offerings .offerings-card .offerings-card-img,
+    .offerings .offerings-card:hover .offerings-card-img {
+        width: 100%;
+        height: 200px;
+        left: 0;
+    }
+
+    .offerings .offerings-card .offerings-card-img img,
+    .offerings .offerings-card:hover .offerings-card-img img {
+        max-width: 100px;
+    }
+
+}

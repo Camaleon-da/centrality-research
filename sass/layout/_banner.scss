@@ -2,11 +2,12 @@
    Banner
 ====================================== */
 .slider-area {
-    background-image: linear-gradient(
-        to right,
-        rgba($color-primary, 0),
-        rgba($color-secondary, 0.8)),
-        url("../images/forest.jpg");
+    // background-image: linear-gradient(
+    //     to right,
+    //     rgba($color-primary, 0),
+    //     rgba($color-secondary, 0.8)),
+    //     url("../images/forest.jpg");
+    background: $color-charcoal;
     height: 100vh;
     background-size: cover;
     background-position: top;
@@ -21,9 +22,10 @@
 }
 
 .slider-image img {
-    top: -90px;
-    width: 100%;
-    position: relative;
+    top: -180px;
+    width: 30%;
+    right: 0;
+    position: absolute;
 }
 
 .slider-text {

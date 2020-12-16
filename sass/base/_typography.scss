@@ -2,14 +2,12 @@
 /* ===================================
     Google font
 ====================================== */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-.main-font{font-family: 'Oswald', sans-serif;}
-.alt-font{font-family: 'Roboto', sans-serif;}
-.mons-font{font-family: 'Montserrat', sans-serif;}
+.main-font{font-family: 'Barlow Condensed', sans-serif;}
+.alt-font{font-family: 'Lato', sans-serif;}
+.mons-font{font-family: 'Lato', sans-serif;}
 
 
 .h1,
@@ -24,7 +22,7 @@ h4,
 h5 {
     line-height: 1.2;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif, sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .h1,
@@ -86,7 +84,7 @@ a {
 
 p:last-child {
     margin-bottom: 0 !important;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .fa,
@@ -245,7 +243,7 @@ section {
     border-radius: 0;
     text-transform: capitalize;
     width: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease !important;

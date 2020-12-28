@@ -748,8 +748,8 @@ section {
   position: absolute; }
 
 .slider-text {
-  background-color: #ffffff;
-  color: #2b3033; }
+  color: #ffffff;
+  font-size: 7rem; }
 
 .slider-area {
   align-items: center;
@@ -1460,7 +1460,9 @@ header a.logo img {
 
 .item .img-responsive {
   max-width: 100%;
-  transition: all .5s ease 0.2s; }
+  transition: all .5s ease 0.2s;
+  min-height: 550px;
+  object-fit: cover; }
 
 .item:hover .img-responsive {
   transform: scale(1.2);

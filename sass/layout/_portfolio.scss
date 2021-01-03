@@ -1,10 +1,15 @@
 /* ===================================
    PORTFOLIO
 ====================================== */
+.team {
+    background: url("../images/timeline.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.portfolio-bg{
-    // background-image: url("../images/portfolio-bg.jpg");
-    background: $color-charcoal;
+.portfolio{
+    background: url("../images/portfolio-bg.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;

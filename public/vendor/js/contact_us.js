@@ -27,9 +27,9 @@ $(".contact_btn").on('click', function () {
 
         var accessURL;
         if(secondLevelLocation){
-            accessURL="../vendor/contact-mailer.php";
+            accessURL="contact-mailer.php";
         }else{
-            accessURL="vendor/contact-mailer.php";
+            accessURL="contact-mailer.php";
         }
         //data to be sent to server
         $.ajax({

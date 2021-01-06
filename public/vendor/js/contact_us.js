@@ -130,7 +130,7 @@ $(".modal_contact_btn").on('click', function () {
 
         var accessURL;
         if(secondLevelLocation){
-            accessURL="../vendor/contact-mailer.php";
+            accessURL="vendor/contact-mailer.php";
         }else{
             accessURL="vendor/contact-mailer.php";
         }

@@ -32,7 +32,6 @@ $(".contact_btn").on('click', function () {
             accessURL="vendor/contact-mailer.php";
         }
         //data to be sent to server
-        console.log(accessURL);
         $.ajax({
             type: 'POST',
             // url: 'vendor/contact-mailer.php',
@@ -73,8 +72,8 @@ $(".contact_btn").on('click', function () {
                     }
                 }
             },
-            error: function () {
-                alert("Failer");
+            error: function (e) {
+                console.error("Error: ", e);
             }
         });
 

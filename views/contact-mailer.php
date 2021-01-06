@@ -94,7 +94,10 @@ if($_POST)
         die($output);
     }else{
         $output = json_encode(array('type'=>'message', 'text' => 'Hi '.$user_Name .' Thank you for contacting us.'));
-        die($output);
+        echo $output;
     }
+}
+else {
+    die("Me la pelan todos hps .l.");
 }
 ?>

@@ -1,5 +1,5 @@
 const express = require('express');
-const sendMail = require('./mail');
+const sendMail = require('public/js/mail');
 
 const app = express();
 const path = require('path');

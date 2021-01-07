@@ -418,6 +418,26 @@ and (orientation: portrait) {
     .logo {
         margin: 0;
     }
+}
+
+@media (max-width: 767px) {
+    .offerings-card {
+        width: 100%;
+    }
+
+    .offerings-description {
+        padding: 25px 0 0;
+    }
+
+    .slider-image img {
+        bottom: 20px;
+        top: unset;
+        right: -20px;
+    }
+
+    .slider-copyright {
+        display: none;
+    }
 
     .slider-text {
         font-size: 5rem;
@@ -436,22 +456,7 @@ and (orientation: portrait) {
     .skill {
         margin-top: 1rem;
     }
-}
-
-@media (max-width: 767px) {
-    .offerings-card {
-        width: 100%;
-    }
-
-    .offerings-description {
-        padding: 25px 0 0;
-    }
-
-    .slider-image img {
-        bottom: 20px;
-        top: unset;
-        right: -20px;
-    }
+    
 }
 
 @media (min-width: 768px) {

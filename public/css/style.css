@@ -1437,7 +1437,19 @@ body {
   .contact-bg, .portfolio, .team, .testimonial-bg, .skills {
     height: auto; }
   .logo {
-    margin: 0; }
+    margin: 0; } }
+
+@media (max-width: 767px) {
+  .offerings-card {
+    width: 100%; }
+  .offerings-description {
+    padding: 25px 0 0; }
+  .slider-image img {
+    bottom: 20px;
+    top: unset;
+    right: -20px; }
+  .slider-copyright {
+    display: none; }
   .slider-text {
     font-size: 5rem; }
     .slider-text ~ span {
@@ -1449,16 +1461,6 @@ body {
     padding: 1.5rem 0; }
   .skill {
     margin-top: 1rem; } }
-
-@media (max-width: 767px) {
-  .offerings-card {
-    width: 100%; }
-  .offerings-description {
-    padding: 25px 0 0; }
-  .slider-image img {
-    bottom: 20px;
-    top: unset;
-    right: -20px; } }
 
 @media (min-width: 768px) {
   .slider-area {

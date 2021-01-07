@@ -280,7 +280,7 @@ header a.logo img {
   position: fixed;
   z-index: 9999;
   top: 0;
-  background: #171717;
+  background: rgba(23, 23, 23, 0.8);
   -webkit-animation-name: animationFade;
   animation-name: animationFade;
   -webkit-animation-duration: 1s;
@@ -894,15 +894,15 @@ header a.logo img {
   .offerings .text-yellow {
     margin-bottom: 10px; }
   .offerings-description {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: 'Lato', sans-serif; }
   .offerings-card {
     position: relative;
-    height: 270px;
+    height: 250px;
     background: #fff;
     display: flex;
     width: 45%;
-    margin: 30px 0;
+    margin: 15px 0;
     color: #202020; }
     .offerings-card-img {
       position: absolute;
@@ -1458,6 +1458,8 @@ body {
   .offerings-description {
     padding-top: 0;
     padding-left: 5.2rem; }
+    .offerings-description:first-of-type {
+      padding-left: 1.6rem; }
   .contact-bg form, .row.pb-5 {
     width: 100%; } }
 

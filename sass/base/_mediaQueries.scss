@@ -447,6 +447,10 @@ and (orientation: portrait) {
     .offerings-description {
         padding-top: 0;
         padding-left: 5.2rem;
+
+        &:first-of-type {
+            padding-left: 1.6rem;
+        }
     }
 
     .contact-bg form, .row.pb-5 {

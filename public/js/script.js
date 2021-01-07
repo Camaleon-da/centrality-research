@@ -13,8 +13,10 @@ $(window).on("load", function () {
     /* ===================================
         Page Piling
     ====================================== */
-    if($(window).width() < 1024) {
+    if($(window).width() < 1280) {
         $('.pagedata').removeAttr('id');
+        $('html').css('overflow-y', 'auto');
+
     }
     else{
         $('#pagepiling').pagepiling({

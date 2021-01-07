@@ -1440,7 +1440,18 @@ body {
   .contact-bg, .portfolio, .team, .testimonial-bg, .skills {
     height: auto; }
   .logo {
-    margin: 0; } }
+    margin: 0; }
+  .slider-text {
+    font-size: 5rem; }
+    .slider-text ~ span {
+      margin-top: 1.5rem;
+      font-size: 5.2rem;
+      padding: 0 3rem; }
+  .skills-disclaimer {
+    font-size: 2.4rem;
+    padding: 1.5rem 0; }
+  .skill {
+    margin-top: 1rem; } }
 
 @media (max-width: 767px) {
   .offerings-card {

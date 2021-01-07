@@ -20,15 +20,17 @@ app.post('/email', (req, res) => {
 
     sendMail(firstName, userPhone, userEmail, userMessage, function (err, data) {
         if (err) {
-            res.status(500).json({
-                message: 'Internal Error',
-                error: err,
+            res.status(500).send({
+                type: 'error',
+                text: 'Email could not been sent, please try again later.',
             });
         } else {
-            res.status({ message: 'Email sent!!!' });
+            res.status(200).send({
+                type: 'sucess',
+                text: 'Email has been sent!',
+            });
         }
     });
-    // res.json({ message: 'Message received!!!' })
 });
 
 router.get('/', function(req, res) {

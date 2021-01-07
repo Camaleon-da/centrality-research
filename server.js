@@ -20,7 +20,10 @@ app.post('/email', (req, res) => {
 
     sendMail(firstName, userPhone, userEmail, userMessage, function (err, data) {
         if (err) {
-            res.status(500).json({ message: 'Internal Error' });
+            res.status(500).json({
+                message: 'Internal Error',
+                error: err,
+            });
         } else {
             res.status({ message: 'Email sent!!!' });
         }

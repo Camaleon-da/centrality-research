@@ -24,7 +24,7 @@
 }
 
 .portfolio-content {
-    padding: 20px 0;
+    padding: 20px 0 0;
     background: transparent;
 }
 
@@ -40,7 +40,6 @@
 }
 
 .single-work {
-    margin-bottom: 30px;
     overflow: hidden;
     position: relative;
     transition: all .3s ease 0s;
@@ -160,7 +159,7 @@
 .item .img-responsive {
     max-width: 100%;
     transition: all .5s ease 0.2s;
-    min-height: 550px;
+    height: 500px;
     object-fit: cover;
 }
 

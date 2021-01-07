@@ -256,7 +256,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
    ====================================== */
 /* nav top default */
 header a.logo img {
-  max-width: 200px;
+  max-width: 150px;
   vertical-align: sub; }
 
 .nav-button {
@@ -725,7 +725,7 @@ header a.logo img {
   overflow: inherit; }
 
 .portfolio-content {
-  padding: 20px 0;
+  padding: 20px 0 0;
   background: transparent; }
 
 .portfolio-content h5 {
@@ -738,7 +738,6 @@ header a.logo img {
   font-family: 'Roboto', sans-serif; }
 
 .single-work {
-  margin-bottom: 30px;
   overflow: hidden;
   position: relative;
   transition: all .3s ease 0s; }
@@ -848,7 +847,7 @@ header a.logo img {
 .item .img-responsive {
   max-width: 100%;
   transition: all .5s ease 0.2s;
-  min-height: 550px;
+  height: 500px;
   object-fit: cover; }
 
 .item:hover .img-responsive {
@@ -1396,8 +1395,6 @@ body {
   /* Portfolio */
   .portfolio-content {
     text-align: center; }
-  .circle {
-    display: none; }
   /* Testimonials */
   .paragraph {
     font-size: 14px; }

@@ -4,8 +4,8 @@ const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-        user: 'testcc1704@gmail.com',
-        pass: '0123321Aa',
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
     },
 });
 
@@ -14,9 +14,15 @@ const sendMail = (firstName, userPhone, userEmail, userMessage, cb) => {
     const mailOptions = {
         sender: firstName,
         from: userEmail,
-        to: 'testcc1704@gmail.com',
+        to: process.env.EMAIL_USER,
         subject: 'You have recieved a message from Centrality Research Website',
-        text: `${userMessage} --- Phone number registered ${userPhone}`,
+        text: `Message sent by ${firstName} (${userEmail})
+            ________________________________________________
+            ${userMessage} \n 
+            Phone number registered ${userPhone}.
+
+            Recieved from centralityresearch.com!
+        `,
     };
     transporter.sendMail(mailOptions, function (err, data) {
         if (err) {

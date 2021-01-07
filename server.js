@@ -8,7 +8,7 @@ const router = express.Router();
 
 // Configuring our data parsing
 app.use(express.urlencoded({
-    extend: false
+    extended: false
 }));
 app.use(express.json());
 app.post('/email', (req, res) => {

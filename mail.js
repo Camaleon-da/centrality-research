@@ -10,6 +10,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const sendMail = (firstName, userPhone, userEmail, userMessage, cb) => {
+    console.log(firstName, userPhone, userEmail, userMessage);
     const mailOptions = {
         sender: firstName,
         from: userEmail,

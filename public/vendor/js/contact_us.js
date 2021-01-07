@@ -22,20 +22,11 @@ $(".contact_btn").on('click', function () {
     //everything looks good! proceed...
     if (proceed === "true") {
 
-        var pathArray = window.location.pathname.split('/');
-        var secondLevelLocation = pathArray[3];
-
-        var accessURL;
-        if(secondLevelLocation){
-            accessURL="contact-mailer.php";
-        }else{
-            accessURL="contact-mailer.php";
-        }
         //data to be sent to server
         $.ajax({
             type: 'POST',
             // url: 'vendor/contact-mailer.php',
-            url: accessURL,
+            url: "/email",
             data: str,
             dataType: 'json',
             success: function (response) {

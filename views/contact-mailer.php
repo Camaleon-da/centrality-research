@@ -2,8 +2,6 @@
 
 
 use PHPMailer\PHPMailer\PHPMailer;
-print_r($_POST);
-print_r($_REQUEST);
 
 if($_POST)
 {

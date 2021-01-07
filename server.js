@@ -1,9 +1,31 @@
 const express = require('express');
+const sendMail = require('./mail');
+
 const app = express();
 const path = require('path');
 const router = express.Router();
-const phpExpress = require('php-express')({
-    binPath: 'php'
+
+
+// Configuring our data parsing
+app.use(express.urlencoded({
+    extend: false
+}));
+app.use(express.json());
+app.post('/email', (req, res) => {
+    // res.sendFile(path.join(__dirname + '/contact-us.html'));
+    //TODO
+    //send email here
+    const { name, subject, email, text } = req.body;
+    console.log('Data: ', req.body);
+
+    sendMail(name, email, subject, text, function (err, data) {
+        if (err) {
+            res.status(500).json({ message: 'Internal Error' });
+        } else {
+            res.status({ message: 'Email sent!!!' });
+        }
+    });
+    // res.json({ message: 'Message received!!!' })
 });
 
 router.get('/', function(req, res) {
@@ -12,11 +34,6 @@ router.get('/', function(req, res) {
 
 app.use('/', router);
 app.use(express.static(__dirname + '/public'));
-
-app.set('views', path.join(__dirname, 'views'));
-app.engine('php', phpExpress.engine);
-app.set('view engine', 'php');
-app.all(/.+\.php$/, phpExpress.router);
 
 app.listen(process.env.port || 3000);
 

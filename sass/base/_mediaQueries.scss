@@ -269,7 +269,7 @@
 
     /* Nav */
     header a.logo img {
-        max-width: 60px;
+        max-width: 90px;
     }
     .navbar-top-default {
         height: 70px;
@@ -456,7 +456,10 @@ and (orientation: portrait) {
     .skill {
         margin-top: 1rem;
     }
-    
+    .logo-image img{
+        max-width: 85%;
+    }
+
 }
 
 @media (min-width: 768px) {

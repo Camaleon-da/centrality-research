@@ -9,13 +9,13 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-const sendMail = (name, email, subject, text, cb) => {
+const sendMail = (firstName, userPhone, userEmail, userMessage, cb) => {
     const mailOptions = {
-        sender: name,
-        from: email,
-        to: 'umekalu@gmail.com',
-        subject: subject,
-        text: text
+        sender: firstName,
+        from: userEmail,
+        to: 'feliperamigon1704@gmail.com',
+        subject: 'You have recieved a message from Centrality Research Website',
+        text: `${userMessage} --- Phone number registered ${userPhone}`,
     };
     transporter.sendMail(mailOptions, function (err, data) {
         if (err) {

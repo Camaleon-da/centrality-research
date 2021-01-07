@@ -15,10 +15,10 @@ app.post('/email', (req, res) => {
     // res.sendFile(path.join(__dirname + '/contact-us.html'));
     //TODO
     //send email here
-    const { name, subject, email, text } = req.body;
+    const { firstName, userPhone, userEmail, userMessage } = req.body;
     console.log('Data: ', req.body);
 
-    sendMail(name, email, subject, text, function (err, data) {
+    sendMail(firstName, userPhone, userEmail, userMessage, function (err, data) {
         if (err) {
             res.status(500).json({ message: 'Internal Error' });
         } else {

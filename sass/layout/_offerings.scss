@@ -116,6 +116,13 @@
     }
 }
 
+.offerings-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
 // Media querys
 
 @media (max-width: 992px) {
@@ -125,7 +132,7 @@
         align-items: center;
 
         &-card {
-            width: 400px;
+            width: 45%;
         }
     }
 }
@@ -146,6 +153,7 @@
             &-content {
                 position: relative;
                 width: 100%;
+                height: auto;
             }
         }
     }
@@ -162,4 +170,18 @@
         max-width: 100px;
     }
 
+    .offerings-card-img img {
+        margin-top: -50px;
+    }
+
+}
+
+@media (max-width: 1279px) {
+    .offerings-card-content {
+        overflow-y: auto;
+    
+        & > div {
+            height: 100%;
+        }
+    }
 }

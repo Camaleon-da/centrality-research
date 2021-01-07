@@ -394,3 +394,62 @@ and (orientation: portrait) {
         top: -35px;
     }
 }
+
+@media (max-width: 1279px) {
+    .container:not(.no-flex) {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+
+        &:not(.no-items) {            
+            align-items: center;
+        }
+
+        &.column {
+            flex-direction: column;
+        }
+    }
+
+    .section {
+        padding: 30px;
+    }
+
+    .contact-bg, .portfolio, .team, .testimonial-bg, .skills {
+        height: auto;
+    }
+
+    .logo {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .offerings-card {
+        width: 100%;
+    }
+
+    .offerings-description {
+        padding: 25px 0 0;
+    }
+
+    .slider-image img {
+        bottom: 20px;
+        top: unset;
+        right: -20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .slider-area {
+        height: 100vh;
+    }
+
+    .offerings-description {
+        padding-top: 0;
+        padding-left: 5.2rem;
+    }
+
+    .contact-bg form, .row.pb-5 {
+        width: 100%;
+    }
+}

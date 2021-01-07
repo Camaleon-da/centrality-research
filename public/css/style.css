@@ -958,6 +958,8 @@ header a.logo img {
       .offerings-card-content ul li:before {
         content: '✓';
         color: #202020; }
+    .offerings-card .offerings-card-list {
+      margin-bottom: 0; }
 
 .offerings .offerings-card:hover .offerings-card-img {
   width: 150px;
